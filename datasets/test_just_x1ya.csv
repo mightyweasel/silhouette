@@ -1,10 +1,10 @@
 group,variable,value
-Policy (Economic),Services (Individuals),1
-Policy (Economic),Services (Businesses),2
-Policy (Economic),Grants and Contributions,3
-Policy (Economic),Regulation,4
-Policy (Economic),Science,5
-Policy (Economic),Policy,6
+Policy (Economic),Services (Individuals),10
+Policy (Economic),Services (Businesses),20
+Policy (Economic),Grants and Contributions,30
+Policy (Economic),Regulation,40
+Policy (Economic),Science,50
+Policy (Economic),Policy,60
 Policy (Social),Services (Individuals),21
 Policy (Social),Services (Businesses),42
 Policy (Social),Grants and Contributions,70

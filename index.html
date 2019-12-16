@@ -4,19 +4,73 @@
 <head>
   <!-- Code from d3-graph-gallery.com -->
   <meta charset="utf-8">
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- Load d3.js -->
   <script src="https://d3js.org/d3.v4.js"></script>
+  <style>
+    html,
+    body {
+      font-family: 'Open Sans', sans-serif;
+      vertical-align: top;
+    }
+
+    .flbox {
+      display: flex;
+      align-items: flex-start;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Create a div where the graph will take place -->
-  <h1>Organizational Silhouette</h1>
-  <div id="my_dataviz"></div>
-
+  <div class="flbox">
+    <div>
+      <h1>Organizational Silhouette</h1>
+      <p>
+        This is a collection of results respresenting what folks think the core personality/focus of the
+        department or organization actually is. Nothing official, just what the general "vox pop" thinks.
+      </p>
+      <h2>Interesting Metrics</h2>
+      <ul>
+        <li>47% of respondents think <strong>Policy</strong> is key</li>
+        <li>Highest coverage is in <strong>risks</strong></li>
+      </ul>
+      <h2>Opportunities</h2>
+      <p>
+        If you're interested in growing your career in the folowwing dimensions <strong>CSPS</strong> would be
+        a great place to check out if you want more experience in
+      </p>
+      <ul>
+        <li>Developing <strong>learning plans</strong></li>
+        <li>Working with <strong>policy and economics</strong></li>
+      </ul>
+    </div>
+    <div>
+      <h2>CSPS Avg. Silhouette</h2>
+      <div id="my_dataviz"></div>
+    </div>
+  </div>
 
   <script>
 
+    /*
+    X axis (Policy Objective)
+    - Policy Areas (Economic, Social, Internation, National Security and Public Safety)
+    - Econ (Trade, Agriculture, Transpo)
+    - Social (Health, Vets, Indian Affairs)
+    - Intl ()
+    - NS (Cyber, Terrorism, Crime)
+ 
+    - IN each area (easy, mid, hard, wicked problems)
+    - Similar on the Biz side:
+ 
+    Y axis (Business Function, Public Admin Access)
+    - Services (Indiv and Biz)
+    - Grants and COntribu
+    - Regulation
+    - Science
+    - Policy
+    */
     // set the dimensions and margins of the graph
     var margin = { top: 30, right: 30, bottom: 200, left: 200 },
       width = 800 - margin.left - margin.right,
@@ -31,9 +85,9 @@
       .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
-    // Labels of row and columns
-    //var myGroupsTest = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
-    var myGroups = [
+    // X Axis
+    var myGroupsTest = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    var myGroupsReal = [
       // Policy
       "Policy (Economic)",
       "Policy (Social)",
@@ -54,9 +108,9 @@
       "National Security (Terrorism)",
       "National Security (Crime)"
     ];
-
-    //var myVarsTest = ["v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10"]
-    var myVars = [
+    // Y Axis
+    var myVarsTest = ["v0", "v1", "v2", "v3", "v4", "v5"]
+    var myVarsReal = [
       "Services (Individuals)",
       "Services (Businesses)",
       "Grants and Contributions",
@@ -64,31 +118,28 @@
       "Science",
       "Policy"
     ];
-
-    /*
-    X axis (Policy Objective)
-    - Policy Areas (Economic, Social, Internation, National Security and Public Safety)
-    - Econ (Trade, Agriculture, Transpo)
-    - Social (Health, Vets, Indian Affairs)
-    - Intl ()
-    - NS (Cyber, Terrorism, Crime)
-
-    - IN each area (easy, mid, hard, wicked problems)
-    - Similar on the Biz side:
-
-    Y axis (Business Function, Public Admin Access)
-    - Services (Indiv and Biz)
-    - Grants and COntribu
-    - Regulation
-    - Science
-    - Policy
-    */
+    //Read the data
+    var test_data_opts = [
+      "test_data",
+      "test_just_x1ya",
+      "test_full"
+    ];
+    // connections
+    var server_conn_opts = [
+      "https://raw.githubusercontent.com/mightyweasel/silhouette/master/",
+      "http://localhost:8888/"
+    ];
+    // usage variables
+    var server_conn = server_conn_opts[0]; // 0 prod, 1 dev
+    var test_data = test_data_opts[0]; // sample data
+    var myGroups = myGroupsReal; // set the dataset
+    var myVars = myVarsReal; // set the dataset
 
     // Build X scales and axis:
     var x = d3.scaleBand()
       .range([0, width])
       .domain(myGroups)
-      .padding(0.01);
+      .padding(0.02);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x))
@@ -111,9 +162,7 @@
       .range(["white", "#69b3a2"])
       .domain([1, 100])
 
-    //Read the data
-    var test_data = ["test_data", "test_just_x1ya"];
-    d3.csv("https://raw.githubusercontent.com/mightyweasel/silhouette/master/datasets/" + test_data[0] + ".csv", function (data) {
+    d3.csv(server_conn + "datasets/" + test_data + ".csv", function (data) {
       svg.selectAll()
         .data(data, function (d) { return d.group + ':' + d.variable; })
         .enter()
