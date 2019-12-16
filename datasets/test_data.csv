@@ -1,0 +1,86 @@
+group,variable,value
+Policy (Economic),Services (Individuals),2
+Policy (Economic),Services (Businesses),78
+Policy (Economic),Grants and Contributions,0
+Policy (Economic),Regulation,81
+Policy (Economic),Science,80
+Policy (Economic),Policy,72
+Policy (Social),Services (Individuals),21
+Policy (Social),Services (Businesses),42
+Policy (Social),Grants and Contributions,70
+Policy (Social),Regulation,29
+Policy (Social),Science,52
+Policy (Social),Policy,35
+Policy (International),Services (Individuals),73
+Policy (International),Services (Businesses),60
+Policy (International),Grants and Contributions,44
+Policy (International),Regulation,86
+Policy (International),Science,29
+Policy (International),Policy,58
+Policy (National Security and Public Safety),Services (Individuals),84
+Policy (National Security and Public Safety),Services (Businesses),72
+Policy (National Security and Public Safety),Grants and Contributions,55
+Policy (National Security and Public Safety),Regulation,22
+Policy (National Security and Public Safety),Science,77
+Policy (National Security and Public Safety),Policy,45
+Economics (Trade),Services (Individuals),3
+Economics (Trade),Services (Businesses),74
+Economics (Trade),Grants and Contributions,15
+Economics (Trade),Regulation,85
+Economics (Trade),Science,54
+Economics (Trade),Policy,8
+Economics (Agriculture),Services (Individuals),17
+Economics (Agriculture),Services (Businesses),51
+Economics (Agriculture),Grants and Contributions,11
+Economics (Agriculture),Regulation,37
+Economics (Agriculture),Science,62
+Economics (Agriculture),Policy,47
+Economics (Transporation),Services (Individuals),37
+Economics (Transporation),Services (Businesses),9
+Economics (Transporation),Grants and Contributions,43
+Economics (Transporation),Regulation,31
+Economics (Transporation),Science,32
+Economics (Transporation),Policy,13
+Social (Health),Services (Individuals),45
+Social (Health),Services (Businesses),86
+Social (Health),Grants and Contributions,0
+Social (Health),Regulation,84
+Social (Health),Science,13
+Social (Health),Policy,46
+Social (Veterans Affairs),Services (Individuals),53
+Social (Veterans Affairs),Services (Businesses),71
+Social (Veterans Affairs),Grants and Contributions,69
+Social (Veterans Affairs),Regulation,43
+Social (Veterans Affairs),Science,89
+Social (Veterans Affairs),Policy,91
+Social (Indigenous Affairs),Services (Individuals),18
+Social (Indigenous Affairs),Services (Businesses),36
+Social (Indigenous Affairs),Grants and Contributions,18
+Social (Indigenous Affairs),Regulation,73
+Social (Indigenous Affairs),Science,58
+Social (Indigenous Affairs),Policy,65
+International,Services (Individuals),43
+International,Services (Businesses),26
+International,Grants and Contributions,38
+International,Regulation,64
+International,Science,78
+International,Policy,83
+National Security (Cyber),Services (Individuals),26
+National Security (Cyber),Services (Businesses),84
+National Security (Cyber),Grants and Contributions,89
+National Security (Cyber),Regulation,45
+National Security (Cyber),Science,68
+National Security (Cyber),Policy,59
+National Security (Terrorism),Services (Individuals),52
+National Security (Terrorism),Services (Businesses),100
+National Security (Terrorism),Grants and Contributions,39
+National Security (Terrorism),Regulation,31
+National Security (Terrorism),Science,23
+National Security (Terrorism),Policy,22
+National Security (Crime),Services (Individuals),11
+National Security (Crime),Services (Businesses),68
+National Security (Crime),Grants and Contributions,72
+National Security (Crime),Regulation,62
+National Security (Crime),Science,8
+National Security (Crime),Policy,0
+
