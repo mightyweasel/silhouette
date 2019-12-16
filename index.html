@@ -11,15 +11,16 @@
 
 <body>
   <!-- Create a div where the graph will take place -->
+  <h1>Organizational Silhouette</h1>
   <div id="my_dataviz"></div>
 
 
   <script>
 
     // set the dimensions and margins of the graph
-    var margin = { top: 30, right: 30, bottom: 30, left: 30 },
-      width = 450 - margin.left - margin.right,
-      height = 450 - margin.top - margin.bottom;
+    var margin = { top: 30, right: 30, bottom: 200, left: 200 },
+      width = 800 - margin.left - margin.right,
+      height = 750 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
     var svg = d3.select("#my_dataviz")
@@ -36,7 +37,7 @@
       // Policy
       "Policy (Economic)",
       "Policy (Social)",
-      "Policy (Internation)",
+      "Policy (International)",
       "Policy (National Security and Public Safety)",
       // Econ
       "Economics (Trade)",
@@ -91,6 +92,11 @@
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x))
+      .selectAll("text")
+      .style("text-anchor", "end")
+      .attr("dx", "-.8em")
+      .attr("dy", ".15em")
+      .attr("transform", "rotate(-65)");
 
     // Build X scales and axis:
     var y = d3.scaleBand()
