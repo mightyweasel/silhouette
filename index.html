@@ -106,9 +106,7 @@
       .domain([1, 100])
 
     //Read the data
-    //d3.csv("https://raw.githubusercontent.com/holtzy/silhouette/master/DATA/test_data.csv", function (data) {
-    d3.csv("datasets/test_data.csv", function (data) {
-
+    d3.csv("https://raw.githubusercontent.com/mightyweasel/silhouette/master/datasets/test_data.csv", function (data) {
       svg.selectAll()
         .data(data, function (d) { return d.group + ':' + d.variable; })
         .enter()
