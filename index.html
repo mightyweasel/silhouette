@@ -112,7 +112,8 @@
       .domain([1, 100])
 
     //Read the data
-    d3.csv("https://raw.githubusercontent.com/mightyweasel/silhouette/master/datasets/test_data.csv", function (data) {
+    var test_data = ["test_data", "test_just_x1ya"];
+    d3.csv("https://raw.githubusercontent.com/mightyweasel/silhouette/master/datasets/" + test_data[0] + ".csv", function (data) {
       svg.selectAll()
         .data(data, function (d) { return d.group + ':' + d.variable; })
         .enter()
