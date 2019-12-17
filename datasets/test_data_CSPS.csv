@@ -1,10 +1,76 @@
 group,variable,value
-Policy (Economic),Services (Individuals),20
-Policy (Economic),Policy,72
-Policy (Social),Services (Individuals),21
-Policy (Social),Services (Businesses),42
-Policy (Social),Grants and Contributions,70
-Economics (Trade),Grants and Contributions,45
-Social (Health),Services (Individuals),45
-Social (Indigenous Affairs),Services (Individuals),58
-National Security (Cyber),Services (Individuals),26
+[Economic] Innovation,[Services] To Individuals,12
+[Economic] Innovation,[Services] To Businesss,91
+[Economic] Innovation,[Services] To Public,46
+[Economic] Innovation,[Transfers] Grants and Contributions,76
+[Economic] Innovation,[Transfers] Contracts,25
+[Economic] Innovation,[Transfers] New Instruments,47
+[Economic] Innovation,[Regulations] Outcomes and Systems-based,61
+[Economic] Innovation,[Science] Research,88
+[Economic] Innovation,[Policy] Priorities Management,68
+[Economic] Innovation,[Policy] Policy Research,87
+[Economic] Innovation,[Policy] Medium-term planning,49
+[Economic] Innovation,[Internal] IM/IT,98
+[Economic] Innovation,[Internal] Human Resources,12
+[Economic] Innovation,[Internal] Financial/Procurement,86
+[Economic] Innovation,[Internal] Communications,92
+[Economic] Regional Development,[Services] To Individuals,63
+[Economic] Regional Development,[Services] To Businesss,48
+[Economic] Regional Development,[Services] To Public,16
+[Economic] Regional Development,[Policy] Issue Management,2
+[Economic] Regional Development,[Policy] Priorities Management,49
+[Economic] Regional Development,[Policy] Policy Research,18
+[Economic] Regional Development,[Policy] Medium-term planning,2
+[Economic] Regional Development,[Internal] IM/IT,11
+[Economic] Regional Development,[Internal] Human Resources,48
+[Economic] Regional Development,[Internal] Financial/Procurement,7
+[Economic] Regional Development,[Internal] Communications,56
+[Economic] Inclusive Growth Opportunities and Innovation,[Services] To Individuals,76
+[Economic] Inclusive Growth Opportunities and Innovation,[Services] To Businesss,14
+[Economic] Inclusive Growth Opportunities and Innovation,[Services] To Public,13
+[Economic] Inclusive Growth Opportunities and Innovation,[Transfers] Grants and Contributions,14
+[Economic] Inclusive Growth Opportunities and Innovation,[Transfers] Contracts,77
+[Social] Labour Market,[Services] To Individuals,61
+[Social] Labour Market,[Services] To Businesss,49
+[Social] Labour Market,[Services] To Public,16
+[Social] Labour Market,[Transfers] Grants and Contributions,17
+[Social] Labour Market,[Transfers] Contracts,14
+[Social] Labour Market,[Transfers] New Instruments,21
+[Social] Labour Market,[Regulations] Risk Assessment,29
+[Social] Labour Market,[Regulations] Prescriptions,40
+[Social] Labour Market,[Regulations] Outcomes and Systems-based,88
+[Social] Labour Market,[Regulations] Verifications and Enforcement,11
+[Social] Labour Market,[Science] Research,6
+[Social] Labour Market,[Science] Applied Research,86
+[Social] Labour Market,[Science] Scientific Services,43
+[Social] Labour Market,[Policy] Issue Management,35
+[Social] Labour Market,[Policy] Priorities Management,99
+[Social] Labour Market,[Policy] Policy Research,8
+[Social] Labour Market,[Policy] Medium-term planning,91
+[Social] Labour Market,[Internal] IM/IT,94
+[Social] Labour Market,[Internal] Human Resources,86
+[Social] Labour Market,[Internal] Financial/Procurement,83
+[Social] Labour Market,[Internal] Communications,94
+[Social] Labour Market,[Internal] Audit/Evaluation,65
+[Social] Diversity and Inclusion,[Services] To Individuals,37
+[Social] Diversity and Inclusion,[Services] To Businesss,35
+[Social] Diversity and Inclusion,[Services] To Public,29
+[Social] Diversity and Inclusion,[Transfers] Grants and Contributions,22
+[Social] Diversity and Inclusion,[Transfers] Contracts,97
+[Social] Diversity and Inclusion,[Transfers] New Instruments,25
+[Social] Diversity and Inclusion,[Regulations] Risk Assessment,62
+[Social] Diversity and Inclusion,[Regulations] Prescriptions,47
+[Social] Diversity and Inclusion,[Regulations] Outcomes and Systems-based,3
+[Social] Diversity and Inclusion,[Regulations] Verifications and Enforcement,64
+[Social] Diversity and Inclusion,[Science] Research,43
+[Social] Diversity and Inclusion,[Science] Applied Research,51
+[Social] Diversity and Inclusion,[Science] Scientific Services,42
+[Social] Diversity and Inclusion,[Policy] Issue Management,51
+[Social] Diversity and Inclusion,[Policy] Priorities Management,76
+[Social] Diversity and Inclusion,[Policy] Policy Research,62
+[Social] Diversity and Inclusion,[Policy] Medium-term planning,24
+[Social] Diversity and Inclusion,[Internal] IM/IT,22
+[Social] Diversity and Inclusion,[Internal] Human Resources,59
+[Social] Diversity and Inclusion,[Internal] Financial/Procurement,4
+[Social] Diversity and Inclusion,[Internal] Communications,34
+[Social] Diversity and Inclusion,[Internal] Audit/Evaluation,2

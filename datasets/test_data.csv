@@ -1,85 +1,529 @@
 group,variable,value
-Policy (Economic),Services (Individuals),2
-Policy (Economic),Services (Businesses),78
-Policy (Economic),Grants and Contributions,0
-Policy (Economic),Regulation,81
-Policy (Economic),Science,80
-Policy (Economic),Policy,72
-Policy (Social),Services (Individuals),21
-Policy (Social),Services (Businesses),42
-Policy (Social),Grants and Contributions,70
-Policy (Social),Regulation,29
-Policy (Social),Science,52
-Policy (Social),Policy,35
-Policy (International),Services (Individuals),73
-Policy (International),Services (Businesses),60
-Policy (International),Grants and Contributions,44
-Policy (International),Regulation,86
-Policy (International),Science,29
-Policy (International),Policy,58
-Policy (National Security and Public Safety),Services (Individuals),84
-Policy (National Security and Public Safety),Services (Businesses),72
-Policy (National Security and Public Safety),Grants and Contributions,55
-Policy (National Security and Public Safety),Regulation,22
-Policy (National Security and Public Safety),Science,77
-Policy (National Security and Public Safety),Policy,45
-Economics (Trade),Services (Individuals),3
-Economics (Trade),Services (Businesses),74
-Economics (Trade),Grants and Contributions,15
-Economics (Trade),Regulation,85
-Economics (Trade),Science,54
-Economics (Trade),Policy,8
-Economics (Agriculture),Services (Individuals),17
-Economics (Agriculture),Services (Businesses),51
-Economics (Agriculture),Grants and Contributions,11
-Economics (Agriculture),Regulation,37
-Economics (Agriculture),Science,62
-Economics (Agriculture),Policy,47
-Economics (Transporation),Services (Individuals),37
-Economics (Transporation),Services (Businesses),9
-Economics (Transporation),Grants and Contributions,43
-Economics (Transporation),Regulation,31
-Economics (Transporation),Science,32
-Economics (Transporation),Policy,13
-Social (Health),Services (Individuals),45
-Social (Health),Services (Businesses),86
-Social (Health),Grants and Contributions,0
-Social (Health),Regulation,84
-Social (Health),Science,13
-Social (Health),Policy,46
-Social (Veterans Affairs),Services (Individuals),53
-Social (Veterans Affairs),Services (Businesses),71
-Social (Veterans Affairs),Grants and Contributions,69
-Social (Veterans Affairs),Regulation,43
-Social (Veterans Affairs),Science,89
-Social (Veterans Affairs),Policy,91
-Social (Indigenous Affairs),Services (Individuals),18
-Social (Indigenous Affairs),Services (Businesses),36
-Social (Indigenous Affairs),Grants and Contributions,18
-Social (Indigenous Affairs),Regulation,73
-Social (Indigenous Affairs),Science,58
-Social (Indigenous Affairs),Policy,65
-International,Services (Individuals),43
-International,Services (Businesses),26
-International,Grants and Contributions,38
-International,Regulation,64
-International,Science,78
-International,Policy,83
-National Security (Cyber),Services (Individuals),26
-National Security (Cyber),Services (Businesses),84
-National Security (Cyber),Grants and Contributions,89
-National Security (Cyber),Regulation,45
-National Security (Cyber),Science,68
-National Security (Cyber),Policy,59
-National Security (Terrorism),Services (Individuals),52
-National Security (Terrorism),Services (Businesses),100
-National Security (Terrorism),Grants and Contributions,39
-National Security (Terrorism),Regulation,31
-National Security (Terrorism),Science,23
-National Security (Terrorism),Policy,22
-National Security (Crime),Services (Individuals),11
-National Security (Crime),Services (Businesses),68
-National Security (Crime),Grants and Contributions,72
-National Security (Crime),Regulation,62
-National Security (Crime),Science,8
-National Security (Crime),Policy,90
+[Economic] Agriculture,[Services] To Individuals,67
+[Economic] Agriculture,[Services] To Businesss,72
+[Economic] Agriculture,[Services] To Public,69
+[Economic] Agriculture,[Transfers] Grants and Contributions,91
+[Economic] Agriculture,[Transfers] Contracts,77
+[Economic] Agriculture,[Transfers] New Instruments,63
+[Economic] Agriculture,[Regulations] Risk Assessment,55
+[Economic] Agriculture,[Regulations] Prescriptions,61
+[Economic] Agriculture,[Regulations] Outcomes and Systems-based,1
+[Economic] Agriculture,[Regulations] Verifications and Enforcement,9
+[Economic] Agriculture,[Science] Research,79
+[Economic] Agriculture,[Science] Applied Research,49
+[Economic] Agriculture,[Science] Scientific Services,52
+[Economic] Agriculture,[Policy] Issue Management,80
+[Economic] Agriculture,[Policy] Priorities Management,80
+[Economic] Agriculture,[Policy] Policy Research,71
+[Economic] Agriculture,[Policy] Medium-term planning,86
+[Economic] Agriculture,[Internal] IM/IT,7
+[Economic] Agriculture,[Internal] Human Resources,88
+[Economic] Agriculture,[Internal] Financial/Procurement,84
+[Economic] Agriculture,[Internal] Communications,25
+[Economic] Agriculture,[Internal] Audit/Evaluation,15
+[Economic] Fisheries,[Services] To Individuals,36
+[Economic] Fisheries,[Services] To Businesss,29
+[Economic] Fisheries,[Services] To Public,70
+[Economic] Fisheries,[Transfers] Grants and Contributions,56
+[Economic] Fisheries,[Transfers] Contracts,15
+[Economic] Fisheries,[Transfers] New Instruments,50
+[Economic] Fisheries,[Regulations] Risk Assessment,96
+[Economic] Fisheries,[Regulations] Prescriptions,31
+[Economic] Fisheries,[Regulations] Outcomes and Systems-based,69
+[Economic] Fisheries,[Regulations] Verifications and Enforcement,30
+[Economic] Fisheries,[Science] Research,30
+[Economic] Fisheries,[Science] Applied Research,52
+[Economic] Fisheries,[Science] Scientific Services,32
+[Economic] Fisheries,[Policy] Issue Management,19
+[Economic] Fisheries,[Policy] Priorities Management,74
+[Economic] Fisheries,[Policy] Policy Research,15
+[Economic] Fisheries,[Policy] Medium-term planning,57
+[Economic] Fisheries,[Internal] IM/IT,75
+[Economic] Fisheries,[Internal] Human Resources,70
+[Economic] Fisheries,[Internal] Financial/Procurement,89
+[Economic] Fisheries,[Internal] Communications,5
+[Economic] Fisheries,[Internal] Audit/Evaluation,66
+[Economic] Natural Resources,[Services] To Individuals,17
+[Economic] Natural Resources,[Services] To Businesss,89
+[Economic] Natural Resources,[Services] To Public,0
+[Economic] Natural Resources,[Transfers] Grants and Contributions,6
+[Economic] Natural Resources,[Transfers] Contracts,90
+[Economic] Natural Resources,[Transfers] New Instruments,37
+[Economic] Natural Resources,[Regulations] Risk Assessment,47
+[Economic] Natural Resources,[Regulations] Prescriptions,95
+[Economic] Natural Resources,[Regulations] Outcomes and Systems-based,18
+[Economic] Natural Resources,[Regulations] Verifications and Enforcement,94
+[Economic] Natural Resources,[Science] Research,22
+[Economic] Natural Resources,[Science] Applied Research,72
+[Economic] Natural Resources,[Science] Scientific Services,77
+[Economic] Natural Resources,[Policy] Issue Management,21
+[Economic] Natural Resources,[Policy] Priorities Management,8
+[Economic] Natural Resources,[Policy] Policy Research,63
+[Economic] Natural Resources,[Policy] Medium-term planning,67
+[Economic] Natural Resources,[Internal] IM/IT,1
+[Economic] Natural Resources,[Internal] Human Resources,41
+[Economic] Natural Resources,[Internal] Financial/Procurement,75
+[Economic] Natural Resources,[Internal] Communications,81
+[Economic] Natural Resources,[Internal] Audit/Evaluation,25
+[Economic] Environment, Climate Change, and Energy,[Services] To Individuals,24
+[Economic] Environment, Climate Change, and Energy,[Services] To Businesss,94
+[Economic] Environment, Climate Change, and Energy,[Services] To Public,23
+[Economic] Environment, Climate Change, and Energy,[Transfers] Grants and Contributions,71
+[Economic] Environment, Climate Change, and Energy,[Transfers] Contracts,35
+[Economic] Environment, Climate Change, and Energy,[Transfers] New Instruments,97
+[Economic] Environment, Climate Change, and Energy,[Regulations] Risk Assessment,50
+[Economic] Environment, Climate Change, and Energy,[Regulations] Prescriptions,44
+[Economic] Environment, Climate Change, and Energy,[Regulations] Outcomes and Systems-based,26
+[Economic] Environment, Climate Change, and Energy,[Regulations] Verifications and Enforcement,95
+[Economic] Environment, Climate Change, and Energy,[Science] Research,27
+[Economic] Environment, Climate Change, and Energy,[Science] Applied Research,95
+[Economic] Environment, Climate Change, and Energy,[Science] Scientific Services,61
+[Economic] Environment, Climate Change, and Energy,[Policy] Issue Management,43
+[Economic] Environment, Climate Change, and Energy,[Policy] Priorities Management,9
+[Economic] Environment, Climate Change, and Energy,[Policy] Policy Research,47
+[Economic] Environment, Climate Change, and Energy,[Policy] Medium-term planning,30
+[Economic] Environment, Climate Change, and Energy,[Internal] IM/IT,40
+[Economic] Environment, Climate Change, and Energy,[Internal] Human Resources,49
+[Economic] Environment, Climate Change, and Energy,[Internal] Financial/Procurement,70
+[Economic] Environment, Climate Change, and Energy,[Internal] Communications,71
+[Economic] Environment, Climate Change, and Energy,[Internal] Audit/Evaluation,5
+[Economic] Innovation,[Services] To Individuals,8
+[Economic] Innovation,[Services] To Businesss,22
+[Economic] Innovation,[Services] To Public,40
+[Economic] Innovation,[Transfers] Grants and Contributions,29
+[Economic] Innovation,[Transfers] Contracts,11
+[Economic] Innovation,[Transfers] New Instruments,21
+[Economic] Innovation,[Regulations] Risk Assessment,85
+[Economic] Innovation,[Regulations] Prescriptions,51
+[Economic] Innovation,[Regulations] Outcomes and Systems-based,79
+[Economic] Innovation,[Regulations] Verifications and Enforcement,42
+[Economic] Innovation,[Science] Research,49
+[Economic] Innovation,[Science] Applied Research,84
+[Economic] Innovation,[Science] Scientific Services,21
+[Economic] Innovation,[Policy] Issue Management,9
+[Economic] Innovation,[Policy] Priorities Management,29
+[Economic] Innovation,[Policy] Policy Research,5
+[Economic] Innovation,[Policy] Medium-term planning,52
+[Economic] Innovation,[Internal] IM/IT,27
+[Economic] Innovation,[Internal] Human Resources,61
+[Economic] Innovation,[Internal] Financial/Procurement,83
+[Economic] Innovation,[Internal] Communications,34
+[Economic] Innovation,[Internal] Audit/Evaluation,91
+[Economic] Regional Development,[Services] To Individuals,77
+[Economic] Regional Development,[Services] To Businesss,74
+[Economic] Regional Development,[Services] To Public,0
+[Economic] Regional Development,[Transfers] Grants and Contributions,4
+[Economic] Regional Development,[Transfers] Contracts,78
+[Economic] Regional Development,[Transfers] New Instruments,72
+[Economic] Regional Development,[Regulations] Risk Assessment,84
+[Economic] Regional Development,[Regulations] Prescriptions,67
+[Economic] Regional Development,[Regulations] Outcomes and Systems-based,20
+[Economic] Regional Development,[Regulations] Verifications and Enforcement,8
+[Economic] Regional Development,[Science] Research,83
+[Economic] Regional Development,[Science] Applied Research,84
+[Economic] Regional Development,[Science] Scientific Services,4
+[Economic] Regional Development,[Policy] Issue Management,83
+[Economic] Regional Development,[Policy] Priorities Management,25
+[Economic] Regional Development,[Policy] Policy Research,95
+[Economic] Regional Development,[Policy] Medium-term planning,19
+[Economic] Regional Development,[Internal] IM/IT,21
+[Economic] Regional Development,[Internal] Human Resources,28
+[Economic] Regional Development,[Internal] Financial/Procurement,62
+[Economic] Regional Development,[Internal] Communications,22
+[Economic] Regional Development,[Internal] Audit/Evaluation,77
+[Economic] Transportation,[Services] To Individuals,47
+[Economic] Transportation,[Services] To Businesss,74
+[Economic] Transportation,[Services] To Public,26
+[Economic] Transportation,[Transfers] Grants and Contributions,46
+[Economic] Transportation,[Transfers] Contracts,37
+[Economic] Transportation,[Transfers] New Instruments,37
+[Economic] Transportation,[Regulations] Risk Assessment,43
+[Economic] Transportation,[Regulations] Prescriptions,62
+[Economic] Transportation,[Regulations] Outcomes and Systems-based,41
+[Economic] Transportation,[Regulations] Verifications and Enforcement,63
+[Economic] Transportation,[Science] Research,63
+[Economic] Transportation,[Science] Applied Research,48
+[Economic] Transportation,[Science] Scientific Services,7
+[Economic] Transportation,[Policy] Issue Management,15
+[Economic] Transportation,[Policy] Priorities Management,30
+[Economic] Transportation,[Policy] Policy Research,35
+[Economic] Transportation,[Policy] Medium-term planning,53
+[Economic] Transportation,[Internal] IM/IT,91
+[Economic] Transportation,[Internal] Human Resources,22
+[Economic] Transportation,[Internal] Financial/Procurement,50
+[Economic] Transportation,[Internal] Communications,81
+[Economic] Transportation,[Internal] Audit/Evaluation,96
+[Economic] Inclusive Growth Opportunities and Innovation,[Services] To Individuals,88
+[Economic] Inclusive Growth Opportunities and Innovation,[Services] To Businesss,68
+[Economic] Inclusive Growth Opportunities and Innovation,[Services] To Public,7
+[Economic] Inclusive Growth Opportunities and Innovation,[Transfers] Grants and Contributions,18
+[Economic] Inclusive Growth Opportunities and Innovation,[Transfers] Contracts,41
+[Economic] Inclusive Growth Opportunities and Innovation,[Transfers] New Instruments,51
+[Economic] Inclusive Growth Opportunities and Innovation,[Regulations] Risk Assessment,1
+[Economic] Inclusive Growth Opportunities and Innovation,[Regulations] Prescriptions,42
+[Economic] Inclusive Growth Opportunities and Innovation,[Regulations] Outcomes and Systems-based,61
+[Economic] Inclusive Growth Opportunities and Innovation,[Regulations] Verifications and Enforcement,78
+[Economic] Inclusive Growth Opportunities and Innovation,[Science] Research,45
+[Economic] Inclusive Growth Opportunities and Innovation,[Science] Applied Research,76
+[Economic] Inclusive Growth Opportunities and Innovation,[Science] Scientific Services,66
+[Economic] Inclusive Growth Opportunities and Innovation,[Policy] Issue Management,16
+[Economic] Inclusive Growth Opportunities and Innovation,[Policy] Priorities Management,55
+[Economic] Inclusive Growth Opportunities and Innovation,[Policy] Policy Research,28
+[Economic] Inclusive Growth Opportunities and Innovation,[Policy] Medium-term planning,21
+[Economic] Inclusive Growth Opportunities and Innovation,[Internal] IM/IT,37
+[Economic] Inclusive Growth Opportunities and Innovation,[Internal] Human Resources,84
+[Economic] Inclusive Growth Opportunities and Innovation,[Internal] Financial/Procurement,24
+[Economic] Inclusive Growth Opportunities and Innovation,[Internal] Communications,70
+[Economic] Inclusive Growth Opportunities and Innovation,[Internal] Audit/Evaluation,0
+[Social] Indigenous Affairs,[Services] To Individuals,14
+[Social] Indigenous Affairs,[Services] To Businesss,17
+[Social] Indigenous Affairs,[Services] To Public,82
+[Social] Indigenous Affairs,[Transfers] Grants and Contributions,18
+[Social] Indigenous Affairs,[Transfers] Contracts,68
+[Social] Indigenous Affairs,[Transfers] New Instruments,93
+[Social] Indigenous Affairs,[Regulations] Risk Assessment,41
+[Social] Indigenous Affairs,[Regulations] Prescriptions,75
+[Social] Indigenous Affairs,[Regulations] Outcomes and Systems-based,11
+[Social] Indigenous Affairs,[Regulations] Verifications and Enforcement,51
+[Social] Indigenous Affairs,[Science] Research,6
+[Social] Indigenous Affairs,[Science] Applied Research,70
+[Social] Indigenous Affairs,[Science] Scientific Services,71
+[Social] Indigenous Affairs,[Policy] Issue Management,68
+[Social] Indigenous Affairs,[Policy] Priorities Management,90
+[Social] Indigenous Affairs,[Policy] Policy Research,27
+[Social] Indigenous Affairs,[Policy] Medium-term planning,49
+[Social] Indigenous Affairs,[Internal] IM/IT,73
+[Social] Indigenous Affairs,[Internal] Human Resources,84
+[Social] Indigenous Affairs,[Internal] Financial/Procurement,30
+[Social] Indigenous Affairs,[Internal] Communications,32
+[Social] Indigenous Affairs,[Internal] Audit/Evaluation,49
+[Social] Justice,[Services] To Individuals,35
+[Social] Justice,[Services] To Businesss,38
+[Social] Justice,[Services] To Public,24
+[Social] Justice,[Transfers] Grants and Contributions,60
+[Social] Justice,[Transfers] Contracts,74
+[Social] Justice,[Transfers] New Instruments,50
+[Social] Justice,[Regulations] Risk Assessment,21
+[Social] Justice,[Regulations] Prescriptions,89
+[Social] Justice,[Regulations] Outcomes and Systems-based,60
+[Social] Justice,[Regulations] Verifications and Enforcement,50
+[Social] Justice,[Science] Research,37
+[Social] Justice,[Science] Applied Research,26
+[Social] Justice,[Science] Scientific Services,65
+[Social] Justice,[Policy] Issue Management,46
+[Social] Justice,[Policy] Priorities Management,3
+[Social] Justice,[Policy] Policy Research,73
+[Social] Justice,[Policy] Medium-term planning,73
+[Social] Justice,[Internal] IM/IT,37
+[Social] Justice,[Internal] Human Resources,31
+[Social] Justice,[Internal] Financial/Procurement,51
+[Social] Justice,[Internal] Communications,16
+[Social] Justice,[Internal] Audit/Evaluation,18
+[Social] Health,[Services] To Individuals,78
+[Social] Health,[Services] To Businesss,17
+[Social] Health,[Services] To Public,47
+[Social] Health,[Transfers] Grants and Contributions,24
+[Social] Health,[Transfers] Contracts,95
+[Social] Health,[Transfers] New Instruments,58
+[Social] Health,[Regulations] Risk Assessment,19
+[Social] Health,[Regulations] Prescriptions,98
+[Social] Health,[Regulations] Outcomes and Systems-based,40
+[Social] Health,[Regulations] Verifications and Enforcement,48
+[Social] Health,[Science] Research,54
+[Social] Health,[Science] Applied Research,29
+[Social] Health,[Science] Scientific Services,29
+[Social] Health,[Policy] Issue Management,64
+[Social] Health,[Policy] Priorities Management,33
+[Social] Health,[Policy] Policy Research,9
+[Social] Health,[Policy] Medium-term planning,18
+[Social] Health,[Internal] IM/IT,51
+[Social] Health,[Internal] Human Resources,70
+[Social] Health,[Internal] Financial/Procurement,86
+[Social] Health,[Internal] Communications,38
+[Social] Health,[Internal] Audit/Evaluation,26
+[Social] Labour Market,[Services] To Individuals,27
+[Social] Labour Market,[Services] To Businesss,16
+[Social] Labour Market,[Services] To Public,37
+[Social] Labour Market,[Transfers] Grants and Contributions,76
+[Social] Labour Market,[Transfers] Contracts,55
+[Social] Labour Market,[Transfers] New Instruments,50
+[Social] Labour Market,[Regulations] Risk Assessment,22
+[Social] Labour Market,[Regulations] Prescriptions,36
+[Social] Labour Market,[Regulations] Outcomes and Systems-based,62
+[Social] Labour Market,[Regulations] Verifications and Enforcement,54
+[Social] Labour Market,[Science] Research,2
+[Social] Labour Market,[Science] Applied Research,41
+[Social] Labour Market,[Science] Scientific Services,70
+[Social] Labour Market,[Policy] Issue Management,12
+[Social] Labour Market,[Policy] Priorities Management,88
+[Social] Labour Market,[Policy] Policy Research,83
+[Social] Labour Market,[Policy] Medium-term planning,74
+[Social] Labour Market,[Internal] IM/IT,90
+[Social] Labour Market,[Internal] Human Resources,28
+[Social] Labour Market,[Internal] Financial/Procurement,27
+[Social] Labour Market,[Internal] Communications,91
+[Social] Labour Market,[Internal] Audit/Evaluation,61
+[Social] Income Security,[Services] To Individuals,54
+[Social] Income Security,[Services] To Businesss,43
+[Social] Income Security,[Services] To Public,47
+[Social] Income Security,[Transfers] Grants and Contributions,4
+[Social] Income Security,[Transfers] Contracts,84
+[Social] Income Security,[Transfers] New Instruments,49
+[Social] Income Security,[Regulations] Risk Assessment,94
+[Social] Income Security,[Regulations] Prescriptions,63
+[Social] Income Security,[Regulations] Outcomes and Systems-based,99
+[Social] Income Security,[Regulations] Verifications and Enforcement,47
+[Social] Income Security,[Science] Research,70
+[Social] Income Security,[Science] Applied Research,92
+[Social] Income Security,[Science] Scientific Services,33
+[Social] Income Security,[Policy] Issue Management,65
+[Social] Income Security,[Policy] Priorities Management,87
+[Social] Income Security,[Policy] Policy Research,78
+[Social] Income Security,[Policy] Medium-term planning,33
+[Social] Income Security,[Internal] IM/IT,38
+[Social] Income Security,[Internal] Human Resources,32
+[Social] Income Security,[Internal] Financial/Procurement,85
+[Social] Income Security,[Internal] Communications,94
+[Social] Income Security,[Internal] Audit/Evaluation,90
+[Social] Heritage,[Services] To Individuals,86
+[Social] Heritage,[Services] To Businesss,97
+[Social] Heritage,[Services] To Public,1
+[Social] Heritage,[Transfers] Grants and Contributions,63
+[Social] Heritage,[Transfers] Contracts,29
+[Social] Heritage,[Transfers] New Instruments,18
+[Social] Heritage,[Regulations] Risk Assessment,1
+[Social] Heritage,[Regulations] Prescriptions,71
+[Social] Heritage,[Regulations] Outcomes and Systems-based,56
+[Social] Heritage,[Regulations] Verifications and Enforcement,33
+[Social] Heritage,[Science] Research,70
+[Social] Heritage,[Science] Applied Research,85
+[Social] Heritage,[Science] Scientific Services,71
+[Social] Heritage,[Policy] Issue Management,18
+[Social] Heritage,[Policy] Priorities Management,49
+[Social] Heritage,[Policy] Policy Research,0
+[Social] Heritage,[Policy] Medium-term planning,7
+[Social] Heritage,[Internal] IM/IT,96
+[Social] Heritage,[Internal] Human Resources,3
+[Social] Heritage,[Internal] Financial/Procurement,18
+[Social] Heritage,[Internal] Communications,84
+[Social] Heritage,[Internal] Audit/Evaluation,75
+[Social] Immigration,[Services] To Individuals,78
+[Social] Immigration,[Services] To Businesss,46
+[Social] Immigration,[Services] To Public,66
+[Social] Immigration,[Transfers] Grants and Contributions,1
+[Social] Immigration,[Transfers] Contracts,78
+[Social] Immigration,[Transfers] New Instruments,35
+[Social] Immigration,[Regulations] Risk Assessment,86
+[Social] Immigration,[Regulations] Prescriptions,23
+[Social] Immigration,[Regulations] Outcomes and Systems-based,54
+[Social] Immigration,[Regulations] Verifications and Enforcement,11
+[Social] Immigration,[Science] Research,26
+[Social] Immigration,[Science] Applied Research,32
+[Social] Immigration,[Science] Scientific Services,95
+[Social] Immigration,[Policy] Issue Management,62
+[Social] Immigration,[Policy] Priorities Management,23
+[Social] Immigration,[Policy] Policy Research,69
+[Social] Immigration,[Policy] Medium-term planning,65
+[Social] Immigration,[Internal] IM/IT,35
+[Social] Immigration,[Internal] Human Resources,56
+[Social] Immigration,[Internal] Financial/Procurement,93
+[Social] Immigration,[Internal] Communications,80
+[Social] Immigration,[Internal] Audit/Evaluation,86
+[Social] Veterans,[Services] To Individuals,87
+[Social] Veterans,[Services] To Businesss,23
+[Social] Veterans,[Services] To Public,74
+[Social] Veterans,[Transfers] Grants and Contributions,11
+[Social] Veterans,[Transfers] Contracts,73
+[Social] Veterans,[Transfers] New Instruments,9
+[Social] Veterans,[Regulations] Risk Assessment,25
+[Social] Veterans,[Regulations] Prescriptions,16
+[Social] Veterans,[Regulations] Outcomes and Systems-based,86
+[Social] Veterans,[Regulations] Verifications and Enforcement,75
+[Social] Veterans,[Science] Research,99
+[Social] Veterans,[Science] Applied Research,86
+[Social] Veterans,[Science] Scientific Services,8
+[Social] Veterans,[Policy] Issue Management,46
+[Social] Veterans,[Policy] Priorities Management,35
+[Social] Veterans,[Policy] Policy Research,77
+[Social] Veterans,[Policy] Medium-term planning,70
+[Social] Veterans,[Internal] IM/IT,86
+[Social] Veterans,[Internal] Human Resources,7
+[Social] Veterans,[Internal] Financial/Procurement,73
+[Social] Veterans,[Internal] Communications,13
+[Social] Veterans,[Internal] Audit/Evaluation,65
+[Social] Status of Women,[Services] To Individuals,25
+[Social] Status of Women,[Services] To Businesss,97
+[Social] Status of Women,[Services] To Public,31
+[Social] Status of Women,[Transfers] Grants and Contributions,48
+[Social] Status of Women,[Transfers] Contracts,88
+[Social] Status of Women,[Transfers] New Instruments,42
+[Social] Status of Women,[Regulations] Risk Assessment,4
+[Social] Status of Women,[Regulations] Prescriptions,76
+[Social] Status of Women,[Regulations] Outcomes and Systems-based,83
+[Social] Status of Women,[Regulations] Verifications and Enforcement,66
+[Social] Status of Women,[Science] Research,3
+[Social] Status of Women,[Science] Applied Research,46
+[Social] Status of Women,[Science] Scientific Services,16
+[Social] Status of Women,[Policy] Issue Management,12
+[Social] Status of Women,[Policy] Priorities Management,2
+[Social] Status of Women,[Policy] Policy Research,38
+[Social] Status of Women,[Policy] Medium-term planning,58
+[Social] Status of Women,[Internal] IM/IT,82
+[Social] Status of Women,[Internal] Human Resources,98
+[Social] Status of Women,[Internal] Financial/Procurement,81
+[Social] Status of Women,[Internal] Communications,87
+[Social] Status of Women,[Internal] Audit/Evaluation,80
+[Social] Diversity and Inclusion,[Services] To Individuals,92
+[Social] Diversity and Inclusion,[Services] To Businesss,38
+[Social] Diversity and Inclusion,[Services] To Public,20
+[Social] Diversity and Inclusion,[Transfers] Grants and Contributions,62
+[Social] Diversity and Inclusion,[Transfers] Contracts,27
+[Social] Diversity and Inclusion,[Transfers] New Instruments,69
+[Social] Diversity and Inclusion,[Regulations] Risk Assessment,75
+[Social] Diversity and Inclusion,[Regulations] Prescriptions,76
+[Social] Diversity and Inclusion,[Regulations] Outcomes and Systems-based,7
+[Social] Diversity and Inclusion,[Regulations] Verifications and Enforcement,84
+[Social] Diversity and Inclusion,[Science] Research,52
+[Social] Diversity and Inclusion,[Science] Applied Research,75
+[Social] Diversity and Inclusion,[Science] Scientific Services,64
+[Social] Diversity and Inclusion,[Policy] Issue Management,91
+[Social] Diversity and Inclusion,[Policy] Priorities Management,27
+[Social] Diversity and Inclusion,[Policy] Policy Research,63
+[Social] Diversity and Inclusion,[Policy] Medium-term planning,76
+[Social] Diversity and Inclusion,[Internal] IM/IT,77
+[Social] Diversity and Inclusion,[Internal] Human Resources,54
+[Social] Diversity and Inclusion,[Internal] Financial/Procurement,80
+[Social] Diversity and Inclusion,[Internal] Communications,69
+[Social] Diversity and Inclusion,[Internal] Audit/Evaluation,54
+[International] Foreign,[Services] To Individuals,17
+[International] Foreign,[Services] To Businesss,93
+[International] Foreign,[Services] To Public,90
+[International] Foreign,[Transfers] Grants and Contributions,73
+[International] Foreign,[Transfers] Contracts,92
+[International] Foreign,[Transfers] New Instruments,99
+[International] Foreign,[Regulations] Risk Assessment,71
+[International] Foreign,[Regulations] Prescriptions,84
+[International] Foreign,[Regulations] Outcomes and Systems-based,92
+[International] Foreign,[Regulations] Verifications and Enforcement,62
+[International] Foreign,[Science] Research,97
+[International] Foreign,[Science] Applied Research,67
+[International] Foreign,[Science] Scientific Services,5
+[International] Foreign,[Policy] Issue Management,86
+[International] Foreign,[Policy] Priorities Management,54
+[International] Foreign,[Policy] Policy Research,11
+[International] Foreign,[Policy] Medium-term planning,91
+[International] Foreign,[Internal] IM/IT,96
+[International] Foreign,[Internal] Human Resources,7
+[International] Foreign,[Internal] Financial/Procurement,89
+[International] Foreign,[Internal] Communications,9
+[International] Foreign,[Internal] Audit/Evaluation,75
+[International] Trade,[Services] To Individuals,34
+[International] Trade,[Services] To Businesss,90
+[International] Trade,[Services] To Public,37
+[International] Trade,[Transfers] Grants and Contributions,43
+[International] Trade,[Transfers] Contracts,27
+[International] Trade,[Transfers] New Instruments,26
+[International] Trade,[Regulations] Risk Assessment,70
+[International] Trade,[Regulations] Prescriptions,78
+[International] Trade,[Regulations] Outcomes and Systems-based,49
+[International] Trade,[Regulations] Verifications and Enforcement,52
+[International] Trade,[Science] Research,16
+[International] Trade,[Science] Applied Research,42
+[International] Trade,[Science] Scientific Services,97
+[International] Trade,[Policy] Issue Management,3
+[International] Trade,[Policy] Priorities Management,60
+[International] Trade,[Policy] Policy Research,24
+[International] Trade,[Policy] Medium-term planning,2
+[International] Trade,[Internal] IM/IT,57
+[International] Trade,[Internal] Human Resources,92
+[International] Trade,[Internal] Financial/Procurement,87
+[International] Trade,[Internal] Communications,9
+[International] Trade,[Internal] Audit/Evaluation,20
+[International] International Development,[Services] To Individuals,46
+[International] International Development,[Services] To Businesss,19
+[International] International Development,[Services] To Public,2
+[International] International Development,[Transfers] Grants and Contributions,3
+[International] International Development,[Transfers] Contracts,58
+[International] International Development,[Transfers] New Instruments,61
+[International] International Development,[Regulations] Risk Assessment,5
+[International] International Development,[Regulations] Prescriptions,6
+[International] International Development,[Regulations] Outcomes and Systems-based,52
+[International] International Development,[Regulations] Verifications and Enforcement,32
+[International] International Development,[Science] Research,4
+[International] International Development,[Science] Applied Research,19
+[International] International Development,[Science] Scientific Services,33
+[International] International Development,[Policy] Issue Management,64
+[International] International Development,[Policy] Priorities Management,97
+[International] International Development,[Policy] Policy Research,62
+[International] International Development,[Policy] Medium-term planning,13
+[International] International Development,[Internal] IM/IT,68
+[International] International Development,[Internal] Human Resources,66
+[International] International Development,[Internal] Financial/Procurement,85
+[International] International Development,[Internal] Communications,69
+[International] International Development,[Internal] Audit/Evaluation,56
+[Public Safety] Defence,[Services] To Individuals,97
+[Public Safety] Defence,[Services] To Businesss,62
+[Public Safety] Defence,[Services] To Public,43
+[Public Safety] Defence,[Transfers] Grants and Contributions,16
+[Public Safety] Defence,[Transfers] Contracts,21
+[Public Safety] Defence,[Transfers] New Instruments,14
+[Public Safety] Defence,[Regulations] Risk Assessment,79
+[Public Safety] Defence,[Regulations] Prescriptions,70
+[Public Safety] Defence,[Regulations] Outcomes and Systems-based,94
+[Public Safety] Defence,[Regulations] Verifications and Enforcement,72
+[Public Safety] Defence,[Science] Research,2
+[Public Safety] Defence,[Science] Applied Research,78
+[Public Safety] Defence,[Science] Scientific Services,71
+[Public Safety] Defence,[Policy] Issue Management,31
+[Public Safety] Defence,[Policy] Priorities Management,51
+[Public Safety] Defence,[Policy] Policy Research,62
+[Public Safety] Defence,[Policy] Medium-term planning,11
+[Public Safety] Defence,[Internal] IM/IT,17
+[Public Safety] Defence,[Internal] Human Resources,86
+[Public Safety] Defence,[Internal] Financial/Procurement,46
+[Public Safety] Defence,[Internal] Communications,9
+[Public Safety] Defence,[Internal] Audit/Evaluation,96
+[Public Safety] Public Safety,[Services] To Individuals,95
+[Public Safety] Public Safety,[Services] To Businesss,38
+[Public Safety] Public Safety,[Services] To Public,58
+[Public Safety] Public Safety,[Transfers] Grants and Contributions,48
+[Public Safety] Public Safety,[Transfers] Contracts,13
+[Public Safety] Public Safety,[Transfers] New Instruments,87
+[Public Safety] Public Safety,[Regulations] Risk Assessment,73
+[Public Safety] Public Safety,[Regulations] Prescriptions,24
+[Public Safety] Public Safety,[Regulations] Outcomes and Systems-based,60
+[Public Safety] Public Safety,[Regulations] Verifications and Enforcement,54
+[Public Safety] Public Safety,[Science] Research,92
+[Public Safety] Public Safety,[Science] Applied Research,98
+[Public Safety] Public Safety,[Science] Scientific Services,44
+[Public Safety] Public Safety,[Policy] Issue Management,51
+[Public Safety] Public Safety,[Policy] Priorities Management,3
+[Public Safety] Public Safety,[Policy] Policy Research,66
+[Public Safety] Public Safety,[Policy] Medium-term planning,92
+[Public Safety] Public Safety,[Internal] IM/IT,38
+[Public Safety] Public Safety,[Internal] Human Resources,88
+[Public Safety] Public Safety,[Internal] Financial/Procurement,42
+[Public Safety] Public Safety,[Internal] Communications,39
+[Public Safety] Public Safety,[Internal] Audit/Evaluation,98
+[Public Safety] National Security,[Services] To Individuals,53
+[Public Safety] National Security,[Services] To Businesss,75
+[Public Safety] National Security,[Services] To Public,13
+[Public Safety] National Security,[Transfers] Grants and Contributions,76
+[Public Safety] National Security,[Transfers] Contracts,3
+[Public Safety] National Security,[Transfers] New Instruments,28
+[Public Safety] National Security,[Regulations] Risk Assessment,8
+[Public Safety] National Security,[Regulations] Prescriptions,79
+[Public Safety] National Security,[Regulations] Outcomes and Systems-based,84
+[Public Safety] National Security,[Regulations] Verifications and Enforcement,26
+[Public Safety] National Security,[Science] Research,75
+[Public Safety] National Security,[Science] Applied Research,33
+[Public Safety] National Security,[Science] Scientific Services,19
+[Public Safety] National Security,[Policy] Issue Management,54
+[Public Safety] National Security,[Policy] Priorities Management,29
+[Public Safety] National Security,[Policy] Policy Research,22
+[Public Safety] National Security,[Policy] Medium-term planning,74
+[Public Safety] National Security,[Internal] IM/IT,15
+[Public Safety] National Security,[Internal] Human Resources,87
+[Public Safety] National Security,[Internal] Financial/Procurement,75
+[Public Safety] National Security,[Internal] Communications,79
+[Public Safety] National Security,[Internal] Audit/Evaluation,67

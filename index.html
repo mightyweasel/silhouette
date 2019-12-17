@@ -62,7 +62,9 @@
     </div>
     <div>
       <h2>CSPS Avg. Silhouette</h2>
-      <div id="my_dataviz"></div>
+      <div id="heatmap_cont">
+        <div id="heatmap_svg"></div>
+      </div>
     </div>
   </div>
 
@@ -85,47 +87,89 @@
     - Regulation
     - Science
     - Policy
+
+    // Submit Org Profile (Your Org -> Profiled Org)
+    // Create a desired profile (local)
+    // Match profile against Org Profiles for match
+    // Create metrics from org data
+    // Store data
+
+
+
     */
 
 
     // X Axis
-    var myGroupsTest = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
-    var myGroupsReal = [
-      // Policy
-      "Policy (Economic)",
-      "Policy (Social)",
-      "Policy (International)",
-      "Policy (National Security and Public Safety)",
-      // Econ
-      "Economics (Trade)",
-      "Economics (Agriculture)",
-      "Economics (Transporation)",
-      // Social
-      "Social (Health)",
-      "Social (Veterans Affairs)",
-      "Social (Indigenous Affairs)",
-      // International
-      "International",
-      // National Security
-      "National Security (Cyber)",
-      "National Security (Terrorism)",
-      "National Security (Crime)"
+    var myGroups = [
+      "[Economic] Agriculture",
+      "[Economic] Fisheries",
+      "[Economic] Natural Resources",
+      "[Economic] Environment, Climate Change, and Energy",
+      "[Economic] Innovation",
+      "[Economic] Regional Development",
+      "[Economic] Transportation",
+      "[Economic] Inclusive Growth Opportunities and Innovation",
+      "[Social] Indigenous Affairs",
+      "[Social] Justice",
+      "[Social] Health",
+      "[Social] Labour Market",
+      "[Social] Income Security",
+      "[Social] Heritage",
+      "[Social] Immigration",
+      "[Social] Veterans",
+      "[Social] Status of Women",
+      "[Social] Diversity and Inclusion",
+      "[International] Foreign",
+      "[International] Trade",
+      "[International] International Development",
+      "[Public Safety] Defence",
+      "[Public Safety] Public Safety",
+      "[Public Safety] National Security"
     ];
     // Y Axis
-    var myVarsTest = ["v0", "v1", "v2", "v3", "v4", "v5"]
-    var myVarsReal = [
-      "Services (Individuals)",
-      "Services (Businesses)",
-      "Grants and Contributions",
-      "Regulation",
-      "Science",
-      "Policy"
+    var myVars = [
+      "[Services] To Individuals",
+      "[Services] To Businesss",
+      "[Services] To Public",
+      "[Transfers] Grants and Contributions",
+      "[Transfers] Contracts",
+      "[Transfers] New Instruments",
+      "[Regulations] Risk Assessment",
+      "[Regulations] Prescriptions",
+      "[Regulations] Outcomes and Systems-based",
+      "[Regulations] Verifications and Enforcement",
+      "[Science] Research",
+      "[Science] Applied Research",
+      "[Science] Scientific Services",
+      "[Policy] Issue Management",
+      "[Policy] Priorities Management",
+      "[Policy] Policy Research",
+      "[Policy] Medium-term planning",
+      "[Internal] IM/IT",
+      "[Internal] Human Resources",
+      "[Internal] Financial/Procurement",
+      "[Internal] Communications",
+      "[Internal] Audit/Evaluation"
     ];
+
+
+    function print_xy_combinations() {
+      var str = "";
+      for (var i = 0; i < myGroups.length; i++) {
+        for (var j = 0; j < myVars.length; j++) {
+          str += myGroups[i] + "," + myVars[j] + "," + (Math.floor(100 * Math.random())) + "\n";
+        }
+      }
+      console.log(str);
+    }
+    print_xy_combinations();
+
     //Read the data
     var test_data_opts = [
       "test_data",
-      "test_just_x1ya",
-      "test_full"
+      "test_data_CSPS",
+      "test_data_ESDC"
+      // other tests
     ];
     // connections
     var server_conn_opts = [
@@ -135,13 +179,16 @@
     // usage variables
     var server_conn = server_conn_opts[1]; // 0 prod, 1 dev
     var test_data = test_data_opts[0]; // sample data
-    var myGroups = myGroupsReal; // set the dataset
-    var myVars = myVarsReal; // set the dataset
 
+
+    var margin = { top: 30, right: 30, bottom: 200, left: 200 },
+      width = 800 - margin.left - margin.right,
+      height = 750 - margin.top - margin.bottom;
 
     function show_selected() {
       var selector = document.getElementById('org_delta');
       var value = selector[selector.selectedIndex].value;
+      // test values
       if (value == "CSPS") {
         test_data = "test_data_CSPS";
       } else if (value == "ESDC") {
@@ -149,21 +196,20 @@
       } else {
         test_data = test_data_opts[0];
       }
-
+      d3.select("svg").remove();
+      document.getElementById('heatmap_svg').innerHTML = "";
       graph_it();
     }
 
 
     function graph_it() {
-      console.log("Charting: " + test_data);
+      //console.log("Charting: " + test_data);
       // set the dimensions and margins of the graph
-      var margin = { top: 30, right: 30, bottom: 200, left: 200 },
-        width = 800 - margin.left - margin.right,
-        height = 750 - margin.top - margin.bottom;
+
 
       // append the svg object to the body of the page
-      d3.select("svg").remove();
-      var svg = d3.select("#my_dataviz")
+
+      var svg = d3.select("#heatmap_svg")
         .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -198,6 +244,31 @@
         .range(["white", "#69b3a2"])
         .domain([1, 100])
 
+      // create a tooltip
+      var tooltip = d3.select("#heatmap_svg")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "2px")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+      // Three function that change the tooltip when user hover / move / leave a cell
+      var mouseover = function (d) {
+        tooltip.style("opacity", 1)
+      }
+      var mousemove = function (d) {
+        tooltip
+          .html("Count: " + d.value)
+          .style("position", "absolute")
+          .style("left", (d3.mouse(this)[0]) + document.getElementById("heatmap_svg").offsetLeft + 100 + "px")
+          .style("top", (d3.mouse(this)[1]) + document.getElementById("heatmap_svg").offsetTop + "px")
+      }
+      var mouseleave = function (d) {
+        tooltip.style("opacity", 0)
+      }
+
       d3.csv(server_conn + "datasets/" + test_data + ".csv", function (data) {
         svg.selectAll()
           .data(data, function (d) { return d.group + ':' + d.variable; })
@@ -205,10 +276,14 @@
           .append("rect")
           .attr("x", function (d) { return x(d.group) })
           .attr("y", function (d) { return y(d.variable) })
+          .attr("rx", 4)
+          .attr("ry", 4)
           .attr("width", x.bandwidth())
           .attr("height", y.bandwidth())
           .style("fill", function (d) { return myColor(d.value) })
-
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave)
       })
     }
 

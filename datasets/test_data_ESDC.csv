@@ -1,13 +1,111 @@
 group,variable,value
-Policy (Economic),Services (Individuals),28
-Policy (Economic),Services (Businesses),78
-Policy (Economic),Grants and Contributions,60
-Policy (Economic),Regulation,81
-Policy (Economic),Science,80
-Policy (Economic),Policy,72
-Policy (Social),Services (Individuals),21
-Policy (Social),Services (Businesses),42
-Policy (Social),Grants and Contributions,70
-Policy (Social),Regulation,29
-Policy (Social),Science,52
-Policy (Social),Policy,35
+[Social] Indigenous Affairs,[Services] To Individuals,43
+[Social] Indigenous Affairs,[Services] To Businesss,43
+[Social] Indigenous Affairs,[Services] To Public,61
+[Social] Indigenous Affairs,[Transfers] Grants and Contributions,3
+[Social] Indigenous Affairs,[Transfers] Contracts,10
+[Social] Indigenous Affairs,[Transfers] New Instruments,47
+[Social] Indigenous Affairs,[Regulations] Risk Assessment,66
+[Social] Indigenous Affairs,[Regulations] Prescriptions,65
+[Social] Indigenous Affairs,[Regulations] Outcomes and Systems-based,78
+[Social] Indigenous Affairs,[Regulations] Verifications and Enforcement,23
+[Social] Indigenous Affairs,[Science] Research,88
+[Social] Indigenous Affairs,[Science] Applied Research,78
+[Social] Indigenous Affairs,[Science] Scientific Services,27
+[Social] Indigenous Affairs,[Policy] Issue Management,73
+[Social] Indigenous Affairs,[Policy] Priorities Management,48
+[Social] Indigenous Affairs,[Policy] Policy Research,48
+[Social] Indigenous Affairs,[Policy] Medium-term planning,65
+[Social] Indigenous Affairs,[Internal] IM/IT,39
+[Social] Indigenous Affairs,[Internal] Human Resources,41
+[Social] Indigenous Affairs,[Internal] Financial/Procurement,93
+[Social] Indigenous Affairs,[Internal] Communications,43
+[Social] Indigenous Affairs,[Internal] Audit/Evaluation,67
+[Social] Justice,[Services] To Individuals,97
+[Social] Justice,[Services] To Businesss,22
+[Social] Justice,[Services] To Public,16
+[Social] Justice,[Transfers] Grants and Contributions,38
+[Social] Justice,[Transfers] Contracts,21
+[Social] Justice,[Transfers] New Instruments,45
+[Social] Justice,[Regulations] Risk Assessment,17
+[Social] Justice,[Regulations] Prescriptions,98
+[Social] Justice,[Regulations] Outcomes and Systems-based,28
+[Social] Justice,[Regulations] Verifications and Enforcement,86
+[Social] Justice,[Science] Research,53
+[Social] Justice,[Science] Applied Research,41
+[Social] Justice,[Science] Scientific Services,54
+[Social] Justice,[Policy] Issue Management,19
+[Social] Justice,[Policy] Priorities Management,40
+[Social] Justice,[Policy] Policy Research,94
+[Social] Justice,[Policy] Medium-term planning,57
+[Social] Justice,[Internal] IM/IT,32
+[Social] Justice,[Internal] Human Resources,2
+[Social] Justice,[Internal] Financial/Procurement,44
+[Social] Justice,[Internal] Communications,51
+[Social] Justice,[Internal] Audit/Evaluation,97
+[Social] Health,[Services] To Individuals,78
+[Social] Health,[Services] To Businesss,96
+[Social] Health,[Services] To Public,46
+[Social] Health,[Transfers] Grants and Contributions,9
+[Social] Health,[Transfers] Contracts,65
+[Social] Health,[Transfers] New Instruments,69
+[Social] Health,[Regulations] Risk Assessment,79
+[Social] Health,[Regulations] Prescriptions,51
+[Social] Health,[Regulations] Outcomes and Systems-based,86
+[Social] Health,[Regulations] Verifications and Enforcement,93
+[Social] Health,[Science] Research,97
+[Social] Health,[Science] Applied Research,43
+[Social] Health,[Science] Scientific Services,98
+[Social] Health,[Policy] Issue Management,45
+[Social] Health,[Policy] Priorities Management,95
+[Social] Health,[Policy] Policy Research,7
+[Social] Health,[Policy] Medium-term planning,62
+[Social] Health,[Internal] IM/IT,97
+[Social] Health,[Internal] Human Resources,57
+[Social] Health,[Internal] Financial/Procurement,69
+[Social] Health,[Internal] Communications,57
+[Social] Health,[Internal] Audit/Evaluation,69
+[Social] Labour Market,[Services] To Individuals,61
+[Social] Labour Market,[Services] To Businesss,49
+[Social] Labour Market,[Services] To Public,16
+[Social] Labour Market,[Transfers] Grants and Contributions,17
+[Social] Labour Market,[Transfers] Contracts,14
+[Social] Labour Market,[Transfers] New Instruments,21
+[Social] Labour Market,[Regulations] Risk Assessment,29
+[Social] Labour Market,[Regulations] Prescriptions,40
+[Social] Labour Market,[Regulations] Outcomes and Systems-based,88
+[Social] Labour Market,[Regulations] Verifications and Enforcement,11
+[Social] Labour Market,[Science] Research,6
+[Social] Labour Market,[Science] Applied Research,86
+[Social] Labour Market,[Science] Scientific Services,43
+[Social] Labour Market,[Policy] Issue Management,35
+[Social] Labour Market,[Policy] Priorities Management,99
+[Social] Labour Market,[Policy] Policy Research,8
+[Social] Labour Market,[Policy] Medium-term planning,91
+[Social] Labour Market,[Internal] IM/IT,94
+[Social] Labour Market,[Internal] Human Resources,86
+[Social] Labour Market,[Internal] Financial/Procurement,83
+[Social] Labour Market,[Internal] Communications,94
+[Social] Labour Market,[Internal] Audit/Evaluation,65
+[Social] Income Security,[Services] To Individuals,17
+[Social] Income Security,[Services] To Businesss,70
+[Social] Income Security,[Services] To Public,99
+[Social] Income Security,[Transfers] Grants and Contributions,86
+[Social] Income Security,[Transfers] Contracts,96
+[Social] Income Security,[Transfers] New Instruments,60
+[Social] Income Security,[Regulations] Risk Assessment,79
+[Social] Income Security,[Regulations] Prescriptions,3
+[Social] Income Security,[Regulations] Outcomes and Systems-based,99
+[Social] Income Security,[Regulations] Verifications and Enforcement,15
+[Social] Income Security,[Science] Research,2
+[Social] Income Security,[Science] Applied Research,74
+[Social] Income Security,[Science] Scientific Services,93
+[Social] Income Security,[Policy] Issue Management,92
+[Social] Income Security,[Policy] Priorities Management,32
+[Social] Income Security,[Policy] Policy Research,30
+[Social] Income Security,[Policy] Medium-term planning,74
+[Social] Income Security,[Internal] IM/IT,22
+[Social] Income Security,[Internal] Human Resources,50
+[Social] Income Security,[Internal] Financial/Procurement,29
+[Social] Income Security,[Internal] Communications,81
+[Social] Income Security,[Internal] Audit/Evaluation,50
